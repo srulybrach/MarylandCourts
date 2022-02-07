@@ -1,5 +1,4 @@
 from selenium import webdriver
-from datetime import date
 from selenium.webdriver.common.by import By
 
 driver = webdriver.Chrome()
@@ -15,3 +14,4 @@ driver.execute_script("arguments[0].setAttribute('class','button')", element)
 
 driver.find_element(By.NAME, "disclaimer").click()
 driver.find_element(By.ID, "btnDisclaimerAgree").click()
+
